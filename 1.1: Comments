@@ -1,0 +1,49 @@
+1.1: Comments
+(c) Jason Wiger, December 22, 2021
+
+Introduction:
+
+    Comments allow you to take notes in your code.
+
+    Some good habits for comment-making:
+    At the function level, use comments to describe what.
+    At the block level, use comments to describe how.
+    At the statement level, use comments to describe why.
+
+
+Single-line comments:
+
+    // this is a single line comment
+
+
+    In practice:
+
+    active|0|: integer func main() {
+        Console.out("Hello, World!"); // prints 'Hello, World!'
+        return default; // returns the default integer value for zero-initialization
+    }
+
+Multiline comments:
+
+    /*
+        This is a multiline comment.
+        A multiline comment can span many lines.
+    */
+
+    In practice:
+
+    active|0|: integer func main() {
+        Console.out("Hello, World" /* oh yea, multiline comments don't cancel a whole line automatically like single-line comments do. */ );
+        return default;
+        /*
+            Big old paragraph, i guess.
+        */
+    }
+
+Conclusion and summary:
+
+Single-line comments: // comment
+Multiline comments: /* comment */
+At the function level, use comments to describe what.
+At the block level, use comments to describe how.
+At the statement level, use comments to describe why.

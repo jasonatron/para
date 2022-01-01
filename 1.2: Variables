@@ -1,0 +1,73 @@
+1.2: Variables (an Introduction)
+(c) Jason Wiger, December 22, 2021
+
+Introduction:
+
+    Variables are an essential way to store data. Whether you're holding 
+    integers, strings, characters, booleans, floats, or anything else,
+    variables are the way to go.
+
+    In this lesson, you will be informed of how to define and modify variables.
+    This lesson is merely an introduction, as there's a whole chapter on the
+    subject of variables up next. Hopefully, this lesson will serve as a good, 
+    simple introduction.
+
+Variable Declaration:
+
+    Unlike other modern languages, para requires you to declare a type. There
+    isn't even an automatic type assignment syntax or keyword in the language.
+    There are a few advanced type copy syntaxes, but those aren't really 
+    automatic type assignments.
+
+    To declare an variable of type integer, ~[integer myInt;]~ does the trick
+    satisfactorily (an integer is a fractionally representable, non-floating 
+    value that is either negative or positive). However, integer is not the 
+    only type:
+
+        char myChar;
+        string myStr;
+        boolean myBool;
+        seven mySvn;
+         
+    All of those types (~[char]~, ~[string]~, ~[boolean]~, and ~[seven]~), are 
+    all valid types. Seven is a decimal type with seven significant digits, 
+    hence the name. Char, short for character, is a string type with a single 
+    character stored inside it, so ~[char myChar]~ can store 'a' or 'q' or '\n'. 
+    A string, similarly to the character type, is a string type that can store 
+    any number of characters. char[] is how strings are stored internally, so 
+    myStr[7] would get the eighth character in the string including spaces and 
+    end-of-line characters, but you shouldn't worry about that right now. 
+    Finally, a boolean is a type that can store only true or false. 
+
+    Variables, although typing is essential, are pretty much pointless if they
+    don't store a value. So how do we do that? Variable assignment!
+
+Variable Assignment and Initialization:
+
+    Let's start with a simple character variable. As we stated before, 
+    ~[char myChar;]~ can declare a character-type variable. However, upon
+    declaration, the variable is unassigned and thus undefined. To assign a
+    variable you can use the '=' (assignment) operator:
+
+        char myChar;
+        myChar = 'a';
+        integer myInt;
+        myInt = 3678;
+        myInt = -1921;
+
+    Now, programmers are lazy. So, 2 lines for an easily combinable set of
+    statements didn't work out for them. Modern languages have combined 
+    ~[(typename) myVar;]~ and ~[myVar = (value)]~ into a single statement:
+
+        integer myInt = 4;
+        char myChar = 'p';
+        boolean myBool = true;
+
+    This is called initialization. It is the preferred variable creation 
+    method. Prefer it in all circumstances except for when you need an
+    undefined variable (which is almost never).
+
+Conclusion:
+
+    Assignment: ~[myVar = 7;]~
+    Initialization: ~[int myVar = 4;]~
